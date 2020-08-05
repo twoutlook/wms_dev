@@ -8,3 +8,19 @@
   * 單選後, 回填到 料號 品名 規格
     * 數量必填
 
+
+```
+  <td class="InputLabel" style="width: 13%; height: 25px;">
+                            <asp:Label ID="Label3" runat="server" Text="*" ForeColor="Red"></asp:Label>
+                            <asp:Label ID="lblCINVCODE" runat="server" Text="<%$ Resources:Lang, FrmInbill_CinvCode %>"></asp:Label>：
+                        </td>
+                        <td  style="width: 20%" colspan="3">
+                            <asp:TextBox ID="txtCINVCODE" runat="server" CssClass="NormalInputText" Width="99%"
+                                MaxLength="50"></asp:TextBox>
+                           <%-- <img alt="" onclick="disponse_div(event,document.all('<%= ShowPARTDiv1.GetDivName %>'));"
+                                src="../../Images/Search.gif" class="select" />--%>
+                                <asp:Literal ID="ltSearch" runat="server"></asp:Literal>
+                                <span class="requiredSign">*</span>
+                        </td>
+                        
+```
