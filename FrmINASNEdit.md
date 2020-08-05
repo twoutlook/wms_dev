@@ -11,3 +11,14 @@
         this.btnNew.Enabled = true;
     }
 ```
+
+在
+```
+    protected void grdINASN_D_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+          //DOING 【入庫通知單】FrmINASNList-> 【入庫通知單-編輯】FrmINASNEdit -> FrmINASN_DEdit
+          this.OpenFloatWin(linkModify, BuildRequestPageURL("FrmINASN_DEdit.aspx?Flag=1&ids=" + strKeyID + "&ErpCode=" + txtCERPCODE.Text.Trim() + "&InType=" + txtITYPE.SelectedValue.Trim(), SYSOperation.Modify, strKeyID), Resources.Lang.FrmINASN_DEdit_Content1, "INASN_D", 1000, 500);
+                   
+             
+    }
+```
