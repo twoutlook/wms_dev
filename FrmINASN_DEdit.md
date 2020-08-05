@@ -1,4 +1,5 @@
 # FrmINASN_DEdit 入库管理->入库通知单明细
+  FrmINASN_DEdit
 
 *已加了[留样数量：]
 
@@ -22,4 +23,12 @@
          <span class="requiredSign">*</span>
      </td>
                         
+```
+
+```
+    protected void grdINASN_D_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+
+      this.OpenFloatWin(linkModify, BuildRequestPageURL("FrmINASN_DEdit.aspx?Flag=1&ids=" + strKeyID + "&ErpCode=" + txtCERPCODE.Text.Trim() + "&InType=" + txtITYPE.SelectedValue.Trim(), SYSOperation.Modify, strKeyID), Resources.Lang.FrmINASN_DEdit_Content1, "INASN_D", 1000, 500);
+    }
 ```
