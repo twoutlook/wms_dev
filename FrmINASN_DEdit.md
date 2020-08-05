@@ -9,6 +9,35 @@
   * 單選後, 回填到 料號 品名 規格
     * 數量必填
 
+## 代碼部份 aspx
+```
+
+<%@ Register Src="../BASE/ShowPARTDiv.ascx" TagName="ShowPARTDiv" TagPrefix="uc1" %>
+```
+在 Solution Explorer 查看 
+
+ShowPARTDiv
+## 代碼部份 cs
+search ShowPARTDiv1
+
+
+## 代碼部份 ShowPARTDiv.ascx.cs
+search ShowPARTDiv1
+```
+//货主
+            if (SetTypeCode.ContainsKey("ProprietorId")) {
+                this.hfProprietorId.Value = SetTypeCode["ProprietorId"].Trim();
+            }
+```
+
+```
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" runat="Server">
+    <ajaxToolkit:ToolkitScriptManager ID="scriptManager1" runat="server">
+    </ajaxToolkit:ToolkitScriptManager>
+    <uc1:ShowPARTDiv ID="ShowPARTDiv1" runat="server" />
+    
+```
+
 
 ```
      <td class="InputLabel" style="width: 13%; height: 25px;">
