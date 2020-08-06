@@ -1,4 +1,4 @@
-# V_INBILL 入庫單列表, 先顯示 INBILL 的 貨主ID,再 LEFT JOIN 貨主主檔顯示貨主編碼
+# V_INBILL 入庫單列表, 先顯示 INBILL 的 貨主ID,再 LEFT JOIN 貨主主檔顯示貨主編碼 ProprietorCode
 # before 
 ```
 
