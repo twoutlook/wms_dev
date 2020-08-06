@@ -3,5 +3,7 @@
 
 ## Requirements:
 * 入库单明细页面新增物料明细	
+  * grdINBILL_RowDataBound
+    *   this.OpenFloatWinMax(linkModify, BuildRequestPageURL("FrmINBILLEdit.aspx",
   * 表头新增货主 物料明细栏位新增批次号字段
   * 物料明细栏位新增批次号字段
