@@ -1,5 +1,9 @@
 # FrmINBILLEdit 入庫單 
 
+## TODO 08/06
+入库单明细页面新增物料明细	表头新增货主 物料明细栏位新增批次号字段
+
+
 ## aspx
   *  <asp:GridView ID="grdINBILL_D" 
   *  OnRowDataBound="grdINBILL_D_RowDataBound"
