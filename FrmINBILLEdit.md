@@ -5,8 +5,14 @@
   *  OnRowDataBound="grdINBILL_D_RowDataBound"
 
 ## cs
+  * txtCAUDITPERSON, ShowData()
+  
+    * EF:INBILL
+      * ProprietorId
+
   *  GridBind()
-    * V_INBILL_D
-      *
+  
+    * EF:V_INBILL_D
+    * 
   *
   *
