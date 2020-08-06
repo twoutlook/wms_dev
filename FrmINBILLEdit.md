@@ -3,3 +3,10 @@
 ## aspx
   *  <asp:GridView ID="grdINBILL_D" 
   *  OnRowDataBound="grdINBILL_D_RowDataBound"
+
+## cs
+  *  GridBind()
+    * V_INBILL_D
+      *
+  *
+  *
