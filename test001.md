@@ -14,7 +14,8 @@
    
   # [生成]入庫單
    * 在入庫通知單列表找到,在[編輯]右邊欄位為[生成]
-     * INASNList
+     * INASNList.aspx
+     
      * OnClick="lbtnCreateInBill_Click"
      ```
       <ItemTemplate>
@@ -23,11 +24,11 @@
          </asp:LinkButton>
       </ItemTemplate>
      ```
+     
      * cs: "lbtnCreateInBill_Click"
      ```
-     
-    protected void lbtnCreateInBill_Click(object sender, EventArgs e)
-    {
+     protected void lbtnCreateInBill_Click(object sender, EventArgs e)
+     {
         List<string> SparaList = new List<string>();
         try
         {
