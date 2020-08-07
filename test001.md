@@ -14,6 +14,15 @@
    
   # [生成]入庫單
    * 在入庫通知單列表找到,在[編輯]右邊欄位為[生成]
+     * INASNList
+     * 
+     ```
+      <ItemTemplate>
+         <asp:LinkButton ID="lbtnCreateInBill" runat="server" CausesValidation="false" CommandArgument='<%#Eval("ID") %>'
+            CommandName="" Text="<%$ Resources:Lang, Common_GenerateBtn %>" OnClick="lbtnCreateInBill_Click" OnClientClick="return confirmprocess();">  
+         </asp:LinkButton>
+      </ItemTemplate>
+     ```
    
    
    * 系統會在現有的[入庫通知單]TAB顯示剛才生成的[入庫單]
